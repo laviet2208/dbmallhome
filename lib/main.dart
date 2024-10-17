@@ -8,16 +8,16 @@ import 'package:shared_preferences/shared_preferences.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-    options: FirebaseOptions(
-      apiKey: "AIzaSyB6IQCpkuF7AOwE3JyI0FPIuqMNIOJHn0s",
-      authDomain: "dbmall-onelink-01.firebaseapp.com",
-      databaseURL: "https://dbmall-onelink-01-default-rtdb.firebaseio.com",
-      projectId: "dbmall-onelink-01",
-      storageBucket: "dbmall-onelink-01.appspot.com",
-      messagingSenderId: "201552769484",
-      appId: "1:201552769484:web:7456b932cc33a4b76dad69",
-      measurementId: "G-X4YMMRFRLT",
-    ),
+    // options: FirebaseOptions(
+    //   apiKey: "AIzaSyB6IQCpkuF7AOwE3JyI0FPIuqMNIOJHn0s",
+    //   authDomain: "dbmall-onelink-01.firebaseapp.com",
+    //   databaseURL: "https://dbmall-onelink-01-default-rtdb.firebaseio.com",
+    //   projectId: "dbmall-onelink-01",
+    //   storageBucket: "dbmall-onelink-01.appspot.com",
+    //   messagingSenderId: "201552769484",
+    //   appId: "1:201552769484:web:7456b932cc33a4b76dad69",
+    //   measurementId: "G-X4YMMRFRLT",
+    // ),
   );
   SharedPreferences prefs = await SharedPreferences.getInstance();
   String? language = prefs.getString('language');
