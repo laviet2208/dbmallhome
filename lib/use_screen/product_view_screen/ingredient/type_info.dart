@@ -129,7 +129,7 @@ class _type_infoState extends State<type_info> {
                     ),
                     child: Center(
                       child: Icon(
-                        Icons.chat_outlined,
+                        Icons.check,
                         color: Colors.black,
                         size: 20,
                       ),

@@ -1,4 +1,5 @@
 import 'package:dbmallhome/before_screen/login_screen/controller/signin_controller.dart';
+import 'package:dbmallhome/before_screen/login_screen/ingredient/login_step_1_ingredient/forgot_password_dialog.dart';
 import 'package:dbmallhome/before_screen/login_screen/ingredient/signup_step_1_ingredient/edit_text_in_signup_step_1.dart';
 import 'package:dbmallhome/before_screen/login_screen/login_screen_step_1.dart';
 import 'package:dbmallhome/before_screen/login_screen/signup_screen_step_1.dart';
@@ -154,6 +155,14 @@ class _login_main_screenState extends State<login_main_screen> {
                             ),
                           ),
                         ),
+                        onTap: () {
+                          showDialog(
+                            context: context,
+                            builder: (context) {
+                              return forgot_password_dialog();
+                            },
+                          );
+                        },
                       ),
                     ],
                   ),

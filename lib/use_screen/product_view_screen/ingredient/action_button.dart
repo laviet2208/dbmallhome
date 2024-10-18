@@ -20,38 +20,38 @@ class action_button extends StatelessWidget {
         children: [
           SizedBox(height: 10,),
 
-          SizedBox(
-            width: double.infinity,
-            child: Padding(
-              padding: EdgeInsets.only(left: 15, right: 15),
-              child: TextButton(
-                style: ButtonStyle(
-                  backgroundColor: WidgetStatePropertyAll<Color>(Colors.blue),
-                ),
-                onPressed: () {
-                  if (finaldata.account.id != '') {
-
-                  } else {
-                    toastMessage('Please login for use this feature');
-                  }
-                },
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 5, bottom: 5),
-                  child: Text(
-                    finaldata.mainlanguage.buyitnow,
-                    style: TextStyle(
-                      fontFamily: 'muli',
-                      color: Colors.white,
-                      fontSize: width/25,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ),
-
-          SizedBox(height: 10,),
+          // SizedBox(
+          //   width: double.infinity,
+          //   child: Padding(
+          //     padding: EdgeInsets.only(left: 15, right: 15),
+          //     child: TextButton(
+          //       style: ButtonStyle(
+          //         backgroundColor: WidgetStatePropertyAll<Color>(Colors.blue),
+          //       ),
+          //       onPressed: () {
+          //         if (finaldata.account.id != '') {
+          //
+          //         } else {
+          //           toastMessage('Please login for use this feature');
+          //         }
+          //       },
+          //       child: Padding(
+          //         padding: const EdgeInsets.only(top: 5, bottom: 5),
+          //         child: Text(
+          //           finaldata.mainlanguage.buyitnow,
+          //           style: TextStyle(
+          //             fontFamily: 'muli',
+          //             color: Colors.white,
+          //             fontSize: width/25,
+          //             fontWeight: FontWeight.bold,
+          //           ),
+          //         ),
+          //       ),
+          //     ),
+          //   ),
+          // ),
+          //
+          // SizedBox(height: 10,),
 
           SizedBox(
             width: double.infinity,

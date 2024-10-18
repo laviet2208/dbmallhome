@@ -11,7 +11,7 @@ import 'package:dbmallhome/utils/utils.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-
+import 'package:url_launcher/url_launcher.dart';
 import '../../../before_screen/login_screen/loading_screen.dart';
 import '../../../data/chatData/chatRoom.dart';
 import '../../../data/chatData/messenger.dart';
@@ -306,7 +306,7 @@ class _account_pageState extends State<account_page> {
                                     ),
                                   ),
                                   onTap: () {
-
+                                    launch("https://t.me/Customer_care");
                                   },
                                 ),
                               ),
