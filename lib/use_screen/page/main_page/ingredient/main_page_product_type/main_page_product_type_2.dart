@@ -66,35 +66,35 @@ class main_page_product_type_2 extends StatelessWidget {
 
           SizedBox(height: 10,),
 
-          Container(
-            height: 60,
-            child: Row(
-              children: [
-                SizedBox(width: 10,),
-
-                TextButton(
-                  onPressed: () {
-
-                  },
-                  style: ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll<Color>(Color.fromARGB(255, 90, 46, 19)),
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.only(top: 5, bottom: 5, left: 5, right: 5),
-                    child: Text(
-                      finaldata.mainlanguage.turnin,
-                      style: TextStyle(
-                          fontFamily: 'muli',
-                          fontSize: width/24,
-                          color: Color.fromARGB(255, 252, 242, 189),
-                          fontWeight: FontWeight.bold
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
+          // Container(
+          //   height: 60,
+          //   child: Row(
+          //     children: [
+          //       SizedBox(width: 10,),
+          //
+          //       TextButton(
+          //         onPressed: () {
+          //
+          //         },
+          //         style: ButtonStyle(
+          //           backgroundColor: WidgetStatePropertyAll<Color>(Color.fromARGB(255, 90, 46, 19)),
+          //         ),
+          //         child: Padding(
+          //           padding: EdgeInsets.only(top: 5, bottom: 5, left: 5, right: 5),
+          //           child: Text(
+          //             finaldata.mainlanguage.turnin,
+          //             style: TextStyle(
+          //                 fontFamily: 'muli',
+          //                 fontSize: width/24,
+          //                 color: Color.fromARGB(255, 252, 242, 189),
+          //                 fontWeight: FontWeight.bold
+          //             ),
+          //           ),
+          //         ),
+          //       ),
+          //     ],
+          //   ),
+          // ),
 
           SizedBox(height: 10,),
 

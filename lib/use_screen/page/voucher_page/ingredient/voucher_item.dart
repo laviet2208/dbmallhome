@@ -1,7 +1,9 @@
 import 'package:dbmallhome/data/finaldata.dart';
 import 'package:dbmallhome/data/otherdata/Tool.dart';
 import 'package:dbmallhome/data/voucherData/Voucher.dart';
+import 'package:dbmallhome/utils/utils.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class voucher_item extends StatelessWidget {
   final Voucher voucher;
@@ -135,13 +137,20 @@ class voucher_item extends StatelessWidget {
                                   child: Container(
                                     width: 15,
                                     height: 15,
+                                    decoration: BoxDecoration(
+                                      color: Colors.transparent,
+                                    ),
                                     child: Icon(
                                       Icons.copy,
                                       color: Colors.grey,
                                       size: 15,
                                     ),
                                   ),
-                                )
+                                  onTap: () {
+                                    Clipboard.setData(ClipboardData(text: voucher.id));
+                                    toastMessage('copied successfully');
+                                  },
+                                ),
                               ],
                             )
                           ),
